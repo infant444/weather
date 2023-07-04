@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image"href="img/logo.png">
+    <link rel="stylesheet" href="./weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <title>Weather app</title>
+</head>
+<body>
+    <div class="header">
+       <div class="x">
+        <input type="text" id="loc" placeholder="Enter the City name...">
+        <button id="search" onclick="chck()">Search</button>
+       </div>
+       <div class="error">
+        <img src="./img/error.png" alt="" class="eimg">
+        <h1>City not found</h1>
+       </div>
+       <div class="weather">
+        <img src="img/rain.png" alt="" class="wic">
+        <h1 class="temp">22 <sup>o</sup>C</h1>
+        <h2 class="city">New York</h2>
+        <div class="det">
+            <div class="c">
+                <img src="./img/humidity.png" alt="">
+                <div>
+                    <p class="hu">50%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="./img/wind.png" alt="">
+                <div>
+                    <p class="win">50km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+    <script src="./weather.js"></script>
+</body>
+</html>
